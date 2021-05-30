@@ -14,8 +14,42 @@
     <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon"/>
     <meta name="description" content="This is a lego parts sales store" />
     <meta name="keywords" content="sortingbricks, LEGO Einzelteile Verkauf, bricklink"/>
+
+    <script type="text/javascript">
+        function showNav() {
+            document.getElementsByTagName('nav')[0].className = 'mobile_nav_show'
+        }
+
+        function closeNav() {
+            document.getElementsByTagName('nav')[0].className = ''
+        }
+    </script>
 </head>
 <body>
+    <nav>
+        <div class="nav_sandwich">
+            <button aria-label="Show Navigation" class="btn_show" onclick="showNav()">
+                
+            </button>
+            <button aria-label="Close Navigation" class="btn_close" onclick="closeNav()">
+
+            </button>
+        </div>
+        <div>
+            <div>
+                <a href="/">Startseite</a>
+            </div>
+            <div>
+                <a href="faq">FAQ</a>
+            </div>
+            <div>
+                <a href="tutorial">Tutorial</a>
+            </div>
+        </div>
+        <div class="nav_select">
+            
+        </div>
+    </nav>
     <header>
         <div>
             <img src="assets/logo.png">
@@ -27,5 +61,30 @@
             <a class="shop_now" target="_blank" href="https://store.bricklink.com/sort.brick&utm_content=globalnav/#/shop">Shop now</a>
         </div>
     </header>
+    <footer>
+        <div class="wrapper">
+            <div class="d-block">
+                <span>Sortingbricks</span>
+                <p>LEGO Einzelteile Verkauf</p>
+            </div>
+            <div class="footer_links">
+                <div>
+                    <a href="/">Startseite</a>
+                    <a href="faq">FAQ</a>
+                    <a href="tutorial">Tutorial</a>
+                </div>
+                <div>
+                    <a href="">Terms</a>
+                    <a href="mailto:sortingbricksch@gmail.com">Contact</a>
+                </div>
+                <a target="_blank" href="https://www.instagram.com/sortingbricks/">
+                    <img src="assets/icons/insta.png"/> 
+                </a>
+            </div>
+        </div>
+        <div class="footer_info">
+            <p>© Sortingbricks - 2021</p>
+        </div>
+    </footer>
 </body>
 </html>
